@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SmartQueue - Login</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="css/styles.css">
+<script src="js/login.js" defer></script>
+</head>
+<body class="bg-gray-900 text-white flex justify-center items-center min-h-screen p-4">
+
+<div class="bg-gray-800 p-6 rounded-2xl shadow-2xl w-full max-w-md animate-fadeIn">
+  <h1 class="text-3xl font-bold text-center mb-6 tracking-wide">SmartQueue Login</h1>
+
+  <label class="block mb-2">Select Role:</label>
+  <select id="roleSelect" class="w-full p-3 rounded-xl text-black mb-4">
+    <option value="user">User</option>
+    <option value="admin">Admin</option>
+  </select>
+
+  <div id="userFields">
+    <input id="userName" placeholder="Enter your name" class="border border-gray-700 p-3 w-full rounded-xl mb-4 text-black placeholder-gray-500">
+  </div>
+
+  <div id="adminFields" class="hidden">
+    <input id="adminName" placeholder="Admin Name" class="border border-gray-700 p-3 w-full rounded-xl mb-4 text-black placeholder-gray-500">
+    <input id="adminPassword" placeholder="Password" type="password" class="border border-gray-700 p-3 w-full rounded-xl mb-4 text-black placeholder-gray-500">
+  </div>
+
+  <button id="loginBtn" class="bg-gradient-to-r from-blue-600 to-blue-400 w-full p-3 rounded-xl text-white font-semibold hover:from-blue-500 hover:to-blue-300 transition-all shadow-lg">Login</button>
+
+  <p id="errorMsg" class="text-red-500 mt-3 text-center"></p>
+</div>
+
+</body>
+</html>
